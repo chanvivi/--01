@@ -1,0 +1,94 @@
+body { 
+    font-family: "Noto Serif Georgian", serif;
+    text-align: center; 
+    background: linear-gradient(to bottom, #f7e6d1, #f5e6cc); /* 漸層背景 */
+    color: #5a4a42;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+}
+
+/* 背景裝飾 */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/white-diamond.png'); /* 淡雅紋理 */
+    opacity: 0.05; /* 減少紋理的顯眼程度 */
+    z-index: -1;
+}
+
+.container { 
+    margin-top: 30px; 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.week-button {
+    display: inline-block;
+    width: 250px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.9); /* 更淺的背景顏色 */
+    color: #5a4a42;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #d3b692;
+    animation: float 3s infinite ease-in-out;
+}
+
+.week-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transition: left 0.4s ease;
+}
+
+.week-button:hover::after {
+    left: 100%;
+}
+
+.week-button:hover {
+    background: rgba(255, 255, 255, 0.95);
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    border-color: #b8996c;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0px); }
+}
+
+h1 {
+    font-family: "Noto Serif Georgian", serif;
+    font-size: 48px;
+    color: #8b6f47;
+    margin-bottom: 25px;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.5); /* 淡雅的透明背景 */
+    border-radius: 15px;
+    text-shadow: 3px 3px 15px rgba(255, 255, 255, 0.6);
+    letter-spacing: 2px;
+    font-weight: bold;
+    border: 2px solid #d3b692; /* 和按鈕邊框顏色保持一致 */
+    box-shadow: 0 5px 20px rgba(211, 182, 146, 0.3); /* 與按鈕陰影一致 */
+}
