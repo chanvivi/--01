@@ -3,59 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>尚無作品</title>
+    <title>我的前端學習網站</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
-            font-family: "Arial", sans-serif;
-            text-align: center;
-            background: linear-gradient(to bottom, #f7e6d1, #f5e6cc);
-            color: #5a4a42;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
+            font-family: 'Poppins', sans-serif;
+            max-width: 900px;
+            margin: 40px auto;
             padding: 20px;
+            background-color: #f8f9fa;
+            text-align: center;
         }
-
         h1 {
-            font-size: 36px;
-            color: #8b6f47;
-            margin-bottom: 20px;
-            background: rgba(255, 255, 255, 0.5);
-            padding: 15px 30px;
-            border-radius: 15px;
-            border: 2px solid #c2a97f;
-            box-shadow: 0 5px 20px rgba(194, 169, 127, 0.3);
+            color: #343a40;
         }
-
-        p {
-            font-size: 20px;
-            opacity: 0.7;
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 16px auto;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            cursor: pointer;
         }
-
-        .back-button {
-            margin-top: 20px;
-            padding: 12px 25px;
-            background: rgba(255, 255, 255, 0.8);
-            color: #5a4a42;
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-content {
+            margin-left: 15px;
+            text-align: left;
+        }
+        .card h2 {
+            margin: 0;
+            color: #007bff;
+        }
+        .card p {
+            color: #6c757d;
+        }
+        .icon {
+            font-size: 30px;
+            color: #007bff;
+        }
+        .button {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 24px;
+            background-color: #007bff;
+            color: white;
             text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            border: 2px solid #d3b692;
-            transition: 0.3s;
+            border-radius: 6px;
+            margin-top: 20px;
+            font-size: 16px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .button i {
+            margin-right: 8px;
         }
 
-        .back-button:hover {
-            background: rgba(255, 255, 255, 0.95);
-            transform: scale(1.05);
-        }
+        /* 懸浮按鈕 */
+.floating-back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #8b6f47;
+    color: white;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.floating-back-button:hover {
+    background-color: #a07d50;
+    transform: scale(1.1);
+}
     </style>
+    <script>
+        function goToLearningPlan(event) {
+            event.stopPropagation();  // 阻止事件冒泡
+            window.location.href = "learning-plan.html";
+            window.location.href = "learning-plan.html";
+        }
+        function goToPortfolio() {
+            window.location.href = "working.html";
+        }
+    </script>
 </head>
 <body>
-    <h1>尚無作品</h1>
-    <p>該週的學習內容尚未上傳，請稍後再來查看！</p>
-    <a href="index.html" class="back-button">返回主頁</a>
+    <h1>我的前端學習網站</h1>
+    <div class="card" onclick="goToLearningPlan(event)">
+        <i class="icon fas fa-book"></i>
+        <div class="card-content">
+            <h2>學習計畫</h2>
+            <p>列出你的學習路線與時間表</p>
+        </div>
+    </div>
+    <div class="card">
+        <i class="icon fas fa-code"></i>
+        <div class="card-content">
+            <h2>練習紀錄</h2>
+            <p>記錄你的程式碼與心得</p>
+        </div>
+    </div>
+    <div class="card" onclick="goToPortfolio()">
+        <i class="icon fas fa-folder-open"></i>
+        <div class="card-content">
+            <h2>作品集</h2>
+            <p>展示你完整的小專案</p>
+        </div>
+    </div>
+    <a href="index.html" class="floating-back-button">返回主頁</a>
 </body>
 </html>
