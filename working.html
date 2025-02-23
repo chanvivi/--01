@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品集</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        h1 {
+            color: #343a40;
+        }
+        .portfolio-container {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .project-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        .project-item:last-child {
+            border-bottom: none;
+        }
+        .project-item i {
+            margin-right: 10px;
+            color: #28a745;
+        }
+        .button {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 24px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 20px;
+            font-size: 16px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+        .button i {
+            margin-right: 8px;
+        }
+                /* 懸浮按鈕 */
+.floating-back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #8b6f47;
+    color: white;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.floating-back-button:hover {
+    background-color: #a07d50;
+    transform: scale(1.1);
+}
+    </style>
+</head>
+<body>
+    <h1>我的作品集</h1>
+    <div class="portfolio-container">
+        <div class="project-item">
+            <div><i class="fas fa-laptop-code"></i> 個人網站</div>
+            <a href="#" onclick="goToProject('week1.html')">查看</a>
+        </div>
+        <div class="project-item">
+            <div><i class="fas fa-mobile-alt"></i> 響應式設計案例</div>
+            <a href="#" onclick="goToProject('week1.html')">查看</a>
+        </div>
+        <div class="project-item">
+            <div><i class="fas fa-database"></i> API 整合專案</div>
+            <a href="#" onclick="goToProject('week1.html')">查看</a>
+        </div>
+        <div class="project-item">
+            <div><i class="fas fa-gamepad"></i> 小型遊戲開發</div>
+            <a href="#" onclick="goToProject('week1.html')">查看</a>
+        </div>
+    </div>
+    <a href="#" class="button" onclick="goToProject('week1.html')"><i class="fas fa-plus"></i> 新增作品</a>
+    <a href="index.html" class="floating-back-button">返回主頁</a>
+</body>
+
+<script>
+    function goToProject(page) {
+        window.location.href = page;
+    }
+</script>
+</html>

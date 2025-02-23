@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>學習計畫</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        h1 {
+            color: #343a40;
+        }
+        .plan-container {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .plan-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        .plan-item:last-child {
+            border-bottom: none;
+        }
+        .plan-item i {
+            margin-right: 10px;
+            color: #007bff;
+        }
+        .button {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 24px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 20px;
+            font-size: 16px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .button i {
+            margin-right: 8px;
+        }
+        /* 懸浮按鈕 */
+.floating-back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #8b6f47;
+    color: white;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.floating-back-button:hover {
+    background-color: #a07d50;
+    transform: scale(1.1);
+}
+    </style>
+</head>
+<body>
+    <h1>學習計畫</h1>
+    <div class="plan-container">
+        <div class="plan-item">
+            <div><i class="fas fa-html5"></i> HTML 基礎學習</div>
+            <span>第一週</span>
+        </div>
+        <div class="plan-item">
+            <div><i class="fas fa-css3-alt"></i> CSS 佈局與樣式</div>
+            <span>第二週</span>
+        </div>
+        <div class="plan-item">
+            <div><i class="fas fa-js"></i> JavaScript 入門</div>
+            <span>第三週</span>
+        </div>
+        <div class="plan-item">
+            <div><i class="fas fa-code"></i> 前端框架：React</div>
+            <span>第四週</span>
+        </div>
+        <div class="plan-item">
+            <div><i class="fas fa-database"></i> 後端與 API</div>
+            <span>第五週</span>
+        </div>
+    </div>
+    <a href="#" class="button"><i class="fas fa-plus"></i> 新增計畫</a>
+    <a href="index.html" class="floating-back-button">返回主頁</a>
+</body>
+</html>
