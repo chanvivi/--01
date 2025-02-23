@@ -1,40 +1,63 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Noto Serif Georgian', serif;
     max-width: 900px;
     margin: 40px auto;
     padding: 20px;
-    background-color: #f8f9fa;
+    background-color: #f7e6d1; /* 與主要頁面保持一致 */
     text-align: center;
+    color: #5a4a42;
 }
+
 h1 {
-    color: #343a40;
+    color: #8b6f47;
+    font-size: 42px;
+    margin-bottom: 30px;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.6);
+    font-weight: bold;
+    border: 2px solid #d3b692;
+    box-shadow: 0 4px 15px rgba(211, 182, 146, 0.3);
 }
+
 .portfolio-container {
     background: white;
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
+    border: 2px solid #d3b692;
 }
+
 .project-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 12px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #d3b692;
+    transition: background 0.2s ease;
 }
+
 .project-item:last-child {
     border-bottom: none;
 }
+
+.project-item:hover {
+    background: rgba(211, 182, 146, 0.1);
+}
+
 .project-item i {
     margin-right: 10px;
-    color: #28a745;
+    color: #8b6f47;
+    font-size: 22px;
 }
+
 .button {
     display: inline-flex;
     align-items: center;
     padding: 12px 24px;
-    background-color: #28a745;
+    background-color: #8b6f47;
     color: white;
     text-decoration: none;
     border-radius: 6px;
@@ -43,29 +66,32 @@ h1 {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     transition: background 0.3s;
 }
+
 .button:hover {
-    background-color: #218838;
+    background-color: #493825;
 }
+
 .button i {
     margin-right: 8px;
 }
-        /* 懸浮按鈕 */
+
+/* 懸浮按鈕 */
 .floating-back-button {
-position: fixed;
-bottom: 20px;
-right: 20px;
-background-color: #8b6f47;
-color: white;
-padding: 15px 20px;
-font-size: 18px;
-font-weight: bold;
-border-radius: 30px;
-text-decoration: none;
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-transition: all 0.3s ease;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #8b6f47;
+    color: white;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
 
 .floating-back-button:hover {
-background-color: #a07d50;
-transform: scale(1.1);
+    background-color: #a07d50;
+    transform: scale(1.1);
 }
