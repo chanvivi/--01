@@ -1,0 +1,103 @@
+
+body {
+    font-family: 'Noto Serif Georgian', serif;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f7e6d1; /* 淡雅背景 */
+    text-align: center;
+    color: #5a4a42;
+}
+
+h1 {
+    color: #8b6f47;
+    font-size: 48px;
+    margin-bottom: 30px;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    text-shadow: 3px 3px 15px rgba(255, 255, 255, 0.6);
+    font-weight: bold;
+    border: 2px solid #d3b692;
+    box-shadow: 0 5px 20px rgba(211, 182, 146, 0.3);
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 16px auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    cursor: pointer;
+    border: 2px solid #d3b692;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-content {
+    margin-left: 15px;
+    text-align: left;
+}
+
+.card h2 {
+    margin: 0;
+    color: #007bff;
+}
+
+.card p {
+    color: #6c757d;
+}
+
+.icon {
+    font-size: 30px;
+    color: #007bff;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-size: 16px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.button i {
+    margin-right: 8px;
+}
+
+/* 懸浮按鈕 */
+.floating-back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #8b6f47;
+    color: white;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.floating-back-button:hover {
+    background-color: #a07d50;
+    transform: scale(1.1);
+}
