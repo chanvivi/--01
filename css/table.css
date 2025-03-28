@@ -25,6 +25,9 @@ body::before {
 }
 h1{
     letter-spacing: 3px;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 table{
     text-align: center;
@@ -34,22 +37,20 @@ table{
     display: block;
     overflow-x: auto;
     white-space: nowrap;
-    /* 對其致中 */
-    display: flex;
-    justify-content: center;
 }
 table th,td{
     padding: 1vw;
-    border: 1px solid #ddd;
+    border: 1px solid #aaa;
 }
 table th{
     background-color: #5a4a4257;
-    
+    font-weight: bold;
+    /* color: #fff; */
 }
 table td:nth-child(odd) {
     background-color: #ce1d3a38;
 }
-table td:hover{
+table tr:hover{
     background-color: #af232377;
     color: #ddd;
 }

@@ -3,66 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>表個練習</title>
-    <!-- 表格樣式 -->
-    <link rel="stylesheet" href="css\table.css">
-
+    <title>班級成績表格</title>
+    <link rel="stylesheet" href="css/table.css">
 </head>
 <body>
     <div>
         <h1>班級成績表格</h1>
     </div>
-    <table>
-        <!-- 表格標題 -->
-        <tr>
-            <th>學號</th>
-            <th>姓名</th>
-            <th>國文</th>
-            <th>英文</th>
-            <th>數學</th>
-            <th>總分</th>
-            <th>平均</th>
-        </tr>
-        <!-- 表格資料001 -->
-        <tr>
-            <td>001</td>
-            <td>張三</td>
-            <td>85</td>
-            <td>90</td>
-            <td>88</td>
-            <td>263</td>
-            <td>87.67</td>
-        </tr>
-            <!-- 表格資料002 -->
-        <tr>
-            <td>002</td>
-            <td>張三</td>
-            <td>83</td>
-            <td>90</td>
-            <td>88</td>
-            <td>263</td>
-            <td>87.67</td>
-        </tr>       
-            <!-- 表格資料003 -->
-        <tr>
-            <td>003</td>
-            <td>張八</td>
-            <td>80</td>
-            <td>80</td>
-            <td>88</td>
-            <td>263</td>
-            <td>87.67</td>
-        </tr>    
-            <!-- 表格資料004 -->
-        <tr>
-            <td>004</td>
-            <td>陳大</td>
-            <td>50</td>
-            <td>70</td>
-            <td>78</td>
-            <td>263</td>
-            <td>87.67</td>
-        </tr>
-    </table>
+    <div>
+        <table id="scoreTable">
+            <tr>
+                <th>學號</th>
+                <th>姓名</th>
+                <th>國文</th>
+                <th>英文</th>
+                <th>數學</th>
+                <th>總分</th>
+                <th>平均</th>
+            </tr>
+            <tr>
+                <td>001</td>
+                <td>張三</td>
+                <td class="score" contenteditable="true">85</td>
+                <td class="score" contenteditable="true">90</td>
+                <td class="score" contenteditable="true">88</td>
+                <td class="total"></td>
+                <td class="average"></td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>李四</td>
+                <td class="score" contenteditable="true">83</td>
+                <td class="score" contenteditable="true">90</td>
+                <td class="score" contenteditable="true">88</td>
+                <td class="total"></td>
+                <td class="average"></td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>王五</td>
+                <td class="score" contenteditable="true">80</td>
+                <td class="score" contenteditable="true">80</td>
+                <td class="score" contenteditable="true">88</td>
+                <td class="total"></td>
+                <td class="average"></td>
+            </tr>
+            <tr>
+                <td>004</td>
+                <td>陳大</td>
+                <td class="score" contenteditable="true">50</td>
+                <td class="score" contenteditable="true">70</td>
+                <td class="score" contenteditable="true">78</td>
+                <td class="total"></td>
+                <td class="average"></td>
+            </tr>
+        </table>
+    </div>
+    <script src="js/calculate.js"></script>
 </body>
 </html>
