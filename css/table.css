@@ -8,7 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    padding: 20px;
+    padding: 2vw;
     font-size:28px;
 }
 /* 背景裝飾 */
@@ -30,6 +30,13 @@ table{
     text-align: center;
     width: 100%;
     border-collapse: collapse;
+    /* 橫向滾軸 */
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    /* 對其致中 */
+    display: flex;
+    justify-content: center;
 }
 table th,td{
     padding: 1vw;
