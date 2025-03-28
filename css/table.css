@@ -1,0 +1,48 @@
+body { 
+    font-family: "Noto Serif Georgian", serif;
+    background: linear-gradient(to bottom, #f7e6d1, #f5e6cc); /* 漸層背景 */
+    color: #5a4a42;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    font-size:28px;
+}
+/* 背景裝飾 */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/white-diamond.png'); /* 淡雅紋理 */
+    opacity: 0.05; /* 減少紋理的顯眼程度 */
+    z-index: -1;
+}
+h1{
+    letter-spacing: 3px;
+}
+table{
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+table th,td{
+    padding: 1vw;
+    border: 1px solid #ddd;
+}
+table th{
+    background-color: #5a4a4257;
+    
+}
+table td:nth-child(odd) {
+    background-color: #ce1d3a38;
+}
+table td:hover{
+    background-color: #af232377;
+    color: #ddd;
+}
